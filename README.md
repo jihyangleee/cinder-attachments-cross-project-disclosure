@@ -65,7 +65,7 @@ API 응답에는 attachment의 연결 정보가 그대로 포함됩니다.
 
 ```python
 connection_info = attachment.connection_info
-
+```
 
 ## Proof of Concept
 
