@@ -81,14 +81,14 @@ connection_info = attachment.connection_info
 ---
 
 ### Attack Vector
-\`\`\`bash
+```bash
 TOKEN=\$(openstack token issue -f value -c id)
 
 curl -X GET \\
   http://<cinder-api>:8776/v3/attachments/<attachment_id> \\
   -H "X-Auth-Token: \$TOKEN" \\
   -H "OpenStack-API-Version: volume 3.27"
-\`\`\`
+```
 
 ---
 
@@ -100,6 +100,7 @@ curl -X GET \\
 
 본 취약점은 OpenStack의 멀티 테넌트 보안 모델을 약화시키며,
 스토리지 백엔드 구성에 따라 더 심각한 2차 공격으로 확장될 수 있습니다.
+
 ---
 
 ## Mitigations
@@ -120,6 +121,7 @@ curl -X GET \\
 ### 정책 일관성 유지
 - Attachments API를 Snapshots / Volumes API와 동일한 접근 제어 모델로 정렬
 - 스토리지 API 전반에서 일관된 테넌트 격리 보장
+  
 ---
 
 ## Conclusion
