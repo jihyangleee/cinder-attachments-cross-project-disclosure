@@ -1,12 +1,11 @@
 # OpenStack Cinder Attachments
 ## Cross-Project Metadata Disclosure (Authorization Bypass)
 
-**Related Launchpad Bug**  
+### Related Launchpad Bug
 https://bugs.launchpad.net/cinder/+bug/2138566
 
-**notion 정리**
+### Notion 정리
 https://www.notion.so/Stealien-Open-Source-Auditing-Repo-2aca2c5c7c0380cc9888c279493935fe
----
 
 ## Impact
 OpenStack Cinder의 Attachments API는 인증된 사용자가  
